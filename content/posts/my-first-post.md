@@ -1,5 +1,5 @@
 ---
-title: "Study Record"
+title: "Study Record01"
 translationKey: "first-post" # 翻译的钥匙
 date: 2025-08-11T20:13:51+09:00
 # weight: 1
