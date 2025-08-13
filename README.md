@@ -1,5 +1,9 @@
 # hugo 网站建立
 
-* 建立一个网站用于记录学习的技术，研究计划和求职记录。
-* 使用 hugo 和 git pages 实现
-* 用于个人项目记录和面试展示
+- 建立一个网站用于记录学习的技术，研究计划和求职记录。
+- 使用 hugo 和 git pages 实现
+- 用于个人项目记录和面试展示
+
+- 自动更新脚本
+  - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+  - ./autocommit.ps1
