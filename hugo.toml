@@ -1,7 +1,7 @@
 # hugo.toml (Single-Language Version)
 
 # --- 网站全局核心设置 ---
-baseURL = "https://Asocialist.github.io"
+baseURL = "https://Asocialist.github.io/myhugopage"
 title = "Liu's memo" # 使用了英文版的標題
 theme = "PaperMod"
 enableRobotsTXT = true

@@ -56,7 +56,10 @@ editPost:
      - 在hugo.toml下进行配置 启用Profile进入名片模式
      - hugo.toml下可以设置多语言模式暂时未开启
      - 在archetyoes下有默认模板default.md用于设置创建的新的页面
+
 1. 部署
+     - 部署在githubpages上
+     - 
 
 ### 未来改善
 
