@@ -1,0 +1,104 @@
+# hugo.toml (Single-Language Version)
+
+# --- 网站全局核心设置 ---
+baseURL = "https://example.org/"
+title = "Liu's memo" # 使用了英文版的標題
+theme = "PaperMod"
+enableRobotsTXT = true
+pagerSize = 5 # 'pagination.pagerSize' 已被簡化為 'paginate'
+env = "production"
+
+# --- Hugo 构建选项 ---
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# --- 内容渲染配置 ---
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+# --- 菜单设置 ---
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives/"
+  weight = 20
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 30
+
+# --- 主题的所有自定义参数 ---
+[params]
+  author = "Liurunzhi"
+  description = "A blog to record my study and research."
+  keywords = [ "Blog", "Technology", "Go", "Docker", "Kubernetes" ]
+  images = ["<link to your site's main image>"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "My name is Liurunzhi. This website is for recording my study process."
+
+  [params.label]
+    text = "Liu's memo"
+    icon = "/favicon.ico"
+    iconHeight = 35
+
+  [params.profileMode]
+    enabled = false
+    # ... profile mode settings ...
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Asocialist"
+  [[params.socialIcons]]
+    name = "zhihu"
+    url = "https://www.zhihu.com/people/liu-3-48-2"
+
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
+  [params.cover]
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = false
+
+  [params.editPost]
+    URL = "https://github.com/Asocialist/your-repo-name/content"
+    Text = "Suggest Changes"
+    appendFilePath = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = [ "title", "permalink", "summary", "content" ]

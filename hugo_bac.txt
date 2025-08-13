@@ -1,0 +1,27 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Liu's Study memo"
+theme = 'PaperMod'
+
+[params]
+  
+
+
+  # 主页的欢迎信息
+  [params.homeInfoParams]
+    Title = "Hello there 👋"
+    Content = "My name is Liurunzhi. This website is for recording my styudy process."
+
+  # 社交媒体图标列表
+  # 注意：每一个图标都是一个独立的 [[params.socialIcons]] 块
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Asocialist"
+
+
+  
+  [[params.socialIcons]]
+    name = "zhihu"
+    url = "https://www.zhihu.com/people/liu-3-48-2"
+
+  

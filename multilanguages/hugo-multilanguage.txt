@@ -1,0 +1,167 @@
+# --- 网站全局核心设置 ---
+baseURL = 'https://example.org/'
+title = "Liu's Study Notes"
+theme = "PaperMod"
+enableRobotsTXT = true
+defaultContentLanguage = "en" # 添加了默认语言设置
+env = "production" # 从 [params] 移出，这是顶层设置
+
+# --- 分页设置 ---
+[pagination]
+  pagerSize = 5
+
+# --- Hugo 构建选项 ---
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[languages]
+  # 英語配置
+  [languages.en]
+    languageName = "English"
+    weight = 1 # 权重最小，排在最前
+    title = "Liu's memo" # 英文网站标题
+    [languages.en.params]
+      author = "Liurunzhi"
+      [languages.en.params.homeInfoParams]
+        Title = "Hi there 👋"
+        Content = "My name is Liurunzhi. This website is for recording my study process."
+    [[languages.en.menu.main]]
+      identifier = "posts"
+      name = "Posts"
+      url = "/posts/"
+      weight = 10
+    [[languages.en.menu.main]]
+      identifier = "archives"
+      name = "Archives"
+      url = "/archives/"
+      weight = 20
+    [[languages.en.menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags/"
+      weight = 30
+
+  # 简体中文配置
+  [languages.zh-cn]
+    languageName = "简体中文"
+    weight = 2
+    title = "刘的笔记" # 中文网站标题
+   
+    [languages.zh-cn.params]
+      author = "Liurunzhi" # 中文作者名
+      [languages.zh-cn.params.homeInfoParams]
+        Title = "你好 👋"
+        Content = "这个网站用来记录我的学习历程。"
+    [[languages.zh-cn.menu.main]]
+      identifier = "posts"
+      name = "文章"
+      url = "/posts/"
+      weight = 10
+    [[languages.zh-cn.menu.main]]
+      identifier = "archives"
+      name = "归档"
+      url = "/zh-cn/archives/"
+      weight = 20
+    [[languages.zh-cn.menu.main]]
+      identifier = "tags"
+      name = "标签"
+      url = "/zh-cn/tags/"
+      weight = 30
+
+  # 日本語配置 (新規追加)
+  [languages.ja]
+    languageName = "日本語"
+    weight = 3
+    title = "劉のノート" # 日本語のサイトタイトル
+    [languages.ja.params]
+      author = "liuruznhi" # 日本語の著者名
+      [languages.ja.params.homeInfoParams]
+        Title = "こんにちは 👋"
+        Content = "これは私の学習過程を記録するためのサイトです。"
+    [[languages.ja.menu.main]]
+      identifier = "posts"
+      name = "投稿"
+      url = "/ja/posts/"
+      weight = 10
+    [[languages.ja.menu.main]]
+      identifier = "archives"
+      name = "アーカイブ"
+      url = "/ja/archives/"
+      weight = 20
+    [[languages.ja.menu.main]]
+      identifier = "tags"
+      name = "タグ"
+      url = "/ja/tags/"
+      weight = 30
+
+
+# --- 内容渲染配置 ---
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+# --- 主题的所有自定义参数 ---
+[params]
+  author = "Liurunzhi"
+  description = "A blog to record my study and research."
+  keywords = [ "Blog", "Technology", "Go", "Docker", "Kubernetes" ]
+  images = ["<link to your site's main image>"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+
+  [params.label]
+    text = "Liu's memo"
+    icon = "/favicon.ico"
+    iconHeight = 35
+
+  [params.profileMode]
+    enabled = false
+    # ... profile mode settings ...
+
+  # socialIcons, assets, cover, editPost, fuseOpts 等其他 params 设置保持不变...
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Asocialist"
+  [[params.socialIcons]]
+    name = "zhihu"
+    url = "https://www.zhihu.com/people/liu-3-48-2"
+
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
+  [params.cover]
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = false
+
+  [params.editPost]
+    URL = "https://github.com/Asocialist/your-repo-name/content"
+    Text = "Suggest Changes"
+    appendFilePath = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = [ "title", "permalink", "summary", "content" ]
