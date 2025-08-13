@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://asocialist.github.io/myhugopage/sitemap.xml
