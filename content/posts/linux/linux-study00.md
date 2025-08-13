@@ -40,12 +40,12 @@ editPost:
 
 ### 学习目标
 
-    - 掌握linux操作和ros操作用于研究和开发软件包
+    - 复习linux操作和ros操作用于研究和开发软件包
     - shell是一种特殊的交互式工具。
     - 它为用户提供了启动程序、管理文件系统中的文件以及运行在Linux系统上的进程的途径。
     - shell的核心是命令行提示符。命令行提示符是shell负责交互的部分。它允许你输入文本命令，然后解释命令，并在内核中执行。
 
-#### 文件操作
+### 文件操作
 
 - `touch` make file
 - `ls -l`list by condition
@@ -56,7 +56,7 @@ editPost:
 - `cat -n file`查看文件内容并显示行号
 - `more file` 显示每页内容后停下
 
-#### bash shell
+### bash shell
 
 - `ps -p pidlist` 查看进程 `ps -A`
 - `top`实时显示进程
@@ -67,7 +67,7 @@ editPost:
 - `gzip` 用来压缩文件 `gzcat`查看已压缩的文件 `gunzip`解压缩
 - `tar function [options] object1 object2` function参数定义了tar命令该做什么  `tar -zxvf filename.tgz`解压
 
-#### shell process
+### shell process
 
 - bash shell 是一个程序 运行时成为一个进程
 - 进程列表 命令分组的一种会创建子shell `(pwd ; ls ; cd /etc; ls)`
@@ -125,7 +125,7 @@ editPost:
     - 环境变量持久化 配置文件在 ~/.bashrc
     - 数组变量 环境变量可以作为数组使用
 
-#### linux 安全权限
+### linux 安全权限
 
 - Linux安全性 解读文件权限 使用 Linux组
 
@@ -148,7 +148,7 @@ editPost:
         - __x__ 代表可执行 __w__ 可写 __r__ 代表可读默认666(八进制)
      - chmod 改变相应权限
 
-#### 文件系统
+### 文件系统
 
 1. 基本文件系统
   
