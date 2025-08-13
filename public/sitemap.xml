@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/myhugopage/</loc>
+    <loc>https://asocialist.github.io/myhugopage/</loc>
     <lastmod>2025-08-11T20:13:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myhugopage/tags/my-notes/</loc>
+    <loc>https://asocialist.github.io/myhugopage/tags/my-notes/</loc>
     <lastmod>2025-08-11T20:13:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myhugopage/posts/</loc>
+    <loc>https://asocialist.github.io/myhugopage/posts/</loc>
     <lastmod>2025-08-11T20:13:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myhugopage/posts/my-first-post/</loc>
+    <loc>https://asocialist.github.io/myhugopage/posts/my-first-post/</loc>
     <lastmod>2025-08-11T20:13:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myhugopage/tags/</loc>
+    <loc>https://asocialist.github.io/myhugopage/tags/</loc>
     <lastmod>2025-08-11T20:13:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myhugopage/categories/</loc>
+    <loc>https://asocialist.github.io/myhugopage/categories/</loc>
   </url>
 </urlset>
