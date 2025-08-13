@@ -59,7 +59,99 @@ editPost:
 
 1. 部署
      - 部署在githubpages上
-     - 
+     - 通过github actions方式部署配置文件.github/workflow/develop.yal如下
+
+     ``` yaml
+      # Sample workflow for building and deploying a Hugo site to GitHub Pages
+        name: Deploy Hugo site to Pages
+
+        on:
+
+        # Runs on pushes targeting the default branch
+
+        push:
+            branches: ["main"]
+
+        # Allows you to run this workflow manually from the Actions tab
+
+        workflow_dispatch:
+
+        # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+
+        permissions:
+        contents: read
+        pages: write
+        id-token: write
+
+        # Allow only one concurrent deployment
+
+        concurrency:
+        group: "pages"
+        cancel-in-progress: false
+
+        # Default to bash
+
+        defaults:
+        run:
+            shell: bash
+
+        jobs:
+
+            # Build job
+
+            build:
+            runs-on: ubuntu-latest
+            steps:
+            - name: Install Hugo CLI
+                # Uses the latest version of Hugo specified by peaceiris/actions-hugo
+                uses: peaceiris/actions-hugo@v3
+                with:
+                hugo-version: 'latest' # <-- Updated to 'latest' to fix version error
+                extended: true
+
+                - name: Install Dart Sass
+                run: sudo snap install dart-sass
+
+            - name: Checkout
+                uses: actions/checkout@v4
+                with:
+                submodules: recursive
+                fetch-depth: 0 # Needed for themes that rely on Git info
+
+            - name: Setup Pages
+                id: pages
+                uses: actions/configure-pages@v5
+
+            - name: Install Node.js dependencies
+                run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
+            - name: Build with Hugo
+                env:
+                HUGO_ENVIRONMENT: production
+                HUGO_ENV: production
+                run: |
+                hugo \
+                    --minify \
+                    --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+            - name: Upload artifact
+                uses: actions/upload-pages-artifact@v3
+                with:
+                path: ./public
+
+            # Deployment job
+
+            deploy:
+            environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+            runs-on: ubuntu-latest
+            needs: build
+            steps:
+            - name: Deploy to GitHub Pages
+                id: deployment
+                uses: actions/deploy-pages@v4
+      ```
 
 ### 未来改善
 
