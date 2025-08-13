@@ -90,7 +90,7 @@ buildExpired = false
     hiddenInSingle = false
 
   [params.editPost]
-    URL = "https://github.com/Asocialist/myhugopage/tree/main/content/posts"
+    URL = "https://github.com/Asocialist/myhugopage/tree/main/content/"
     Text = "Suggest Changes"
     appendFilePath = true
 

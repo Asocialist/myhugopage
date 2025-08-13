@@ -1,5 +1,5 @@
 ---
-title: "Study Record01"
+title: "Hugo Study Record01"
 translationKey: "first-post" # 翻译的钥匙
 date: 2025-08-11T20:13:51+09:00
 # weight: 1
@@ -33,7 +33,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/Asocialist/myhugopage/tree/main/content/"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
