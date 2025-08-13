@@ -1,7 +1,7 @@
 # hugo.toml (Single-Language Version)
 
 # --- 网站全局核心设置 ---
-baseURL = "https://example.org/"
+baseURL = "https://Asocialist.github.io"
 title = "Liu's memo" # 使用了英文版的標題
 theme = "PaperMod"
 enableRobotsTXT = true
@@ -90,7 +90,7 @@ buildExpired = false
     hiddenInSingle = false
 
   [params.editPost]
-    URL = "https://github.com/Asocialist/your-repo-name/content"
+    URL = "https://github.com/Asocialist/myhugopage/tree/main/content/posts"
     Text = "Suggest Changes"
     appendFilePath = true
 
