@@ -13,6 +13,7 @@ draft: false
 hidemeta: false
 comments: false
 description: "for learning "
+series: ["建站日记"]
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: false # to disable highlightjs
 disableShare: false

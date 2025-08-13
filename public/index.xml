@@ -14,7 +14,7 @@
     <lastBuildDate>Mon, 11 Aug 2025 20:13:51 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/myhugopage/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Study Record</title>
+      <title>Study Record01</title>
       <link>http://localhost:1313/myhugopage/posts/my-first-post/</link>
       <pubDate>Mon, 11 Aug 2025 20:13:51 +0900</pubDate>
       <guid>http://localhost:1313/myhugopage/posts/my-first-post/</guid>
