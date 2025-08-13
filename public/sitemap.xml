@@ -2,20 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/myhugopage/posts/linux/linux-study00/</loc>
+    <lastmod>2025-08-13T16:53:38+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/</loc>
+    <lastmod>2025-08-13T16:53:38+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/tags/my-notes/</loc>
+    <lastmod>2025-08-13T16:53:38+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/posts/</loc>
+    <lastmod>2025-08-13T16:53:38+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/tags/</loc>
+    <lastmod>2025-08-13T16:53:38+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/myhugopage/posts/hugo-study/hugo-study00/</loc>
     <lastmod>2025-08-11T20:13:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myhugopage/</loc>
-    <lastmod>2025-08-11T20:13:51+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myhugopage/tags/my-notes/</loc>
-    <lastmod>2025-08-11T20:13:51+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myhugopage/posts/</loc>
-    <lastmod>2025-08-11T20:13:51+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myhugopage/tags/</loc>
-    <lastmod>2025-08-11T20:13:51+09:00</lastmod>
+    <loc>http://localhost:1313/myhugopage/archives/</loc>
   </url><url>
     <loc>http://localhost:1313/myhugopage/categories/</loc>
   </url>
