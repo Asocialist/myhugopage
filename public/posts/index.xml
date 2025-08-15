@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Liu&#39;s memo</title>
     <link>http://localhost:1313/myhugopage/posts/</link>
     <description>Recent content in Posts on Liu&#39;s memo</description>
-    <image>
-      <title>Liu&#39;s memo</title>
-      <url>http://localhost:1313/myhugopage/%3Clink%20to%20your%20site%27s%20main%20image%3E</url>
-      <link>http://localhost:1313/myhugopage/%3Clink%20to%20your%20site%27s%20main%20image%3E</link>
-    </image>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Aug 2025 16:53:38 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 15 Aug 2025 13:53:32 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/myhugopage/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Linux Study00</title>
-      <link>http://localhost:1313/myhugopage/posts/linux/linux-study00/</link>
-      <pubDate>Wed, 13 Aug 2025 16:53:38 +0900</pubDate>
-      <guid>http://localhost:1313/myhugopage/posts/linux/linux-study00/</guid>
-      <description>for learning </description>
+      <title>Data Visualization 00</title>
+      <link>http://localhost:1313/myhugopage/posts/python/datavisualization00/</link>
+      <pubDate>Fri, 15 Aug 2025 13:53:32 +0900</pubDate>
+      <guid>http://localhost:1313/myhugopage/posts/python/datavisualization00/</guid>
+      <description>学习python data visualization 复习python 学习 matplolib pandas seaborn 更方便的绘制研究会用到的图表 比较r语言 python用到的更多 能够独立绘制统计图表和进行数据分析为目的 python 复习 数据结构复习:&#xA;list 任意对象 有序集合 my_list = [] 注意元素可重复可以是不同类型 tuple 有序 不可变 可重复 相当于一个列表但不可变 my_tuple = () dictionary 储存键值对(key-value pairs) 键必须唯一且不可变 可变的是可以增删键值对 python3.7版本以后为有序&#xA;mydic = {} another_dict = dict() 例子 student_info = { &amp;#34;name&amp;#34;: &amp;#34;Li Hua&amp;#34;, &amp;#34;student_id&amp;#34;: 20250815, &amp;#34;courses&amp;#34;: [&amp;#34;Math&amp;#34;, &amp;#34;Physics&amp;#34;], &amp;#34;age&amp;#34;: 20 } 配置环境和包的安装&#xA;pip install pandas matplotlib seaborn numpy matplotlib seaborn用于绘图和可视化 numpy he pandas 用于分析数据 anaconda 管理python 数据处理</description>
     </item>
     <item>
-      <title>Hugo Study Record01</title>
+      <title>Data Visualization 01</title>
+      <link>http://localhost:1313/myhugopage/posts/python/datavisualization01/</link>
+      <pubDate>Fri, 15 Aug 2025 13:53:32 +0900</pubDate>
+      <guid>http://localhost:1313/myhugopage/posts/python/datavisualization01/</guid>
+      <description>学习numpy </description>
+    </item>
+    <item>
+      <title>Linux Study00</title>
+      <link>http://localhost:1313/myhugopage/posts/linux/linux-study-00/</link>
+      <pubDate>Wed, 13 Aug 2025 16:53:38 +0900</pubDate>
+      <guid>http://localhost:1313/myhugopage/posts/linux/linux-study-00/</guid>
+      <description>linux ros command review 学习目标 - 复习linux操作和ros操作用于研究和开发软件包 - shell是一种特殊的交互式工具。 - 它为用户提供了启动程序、管理文件系统中的文件以及运行在Linux系统上的进程的途径。 - shell的核心是命令行提示符。命令行提示符是shell负责交互的部分。它允许你输入文本命令，然后解释命令，并在内核中执行。 文件操作 touch make file ls -llist by condition ls -F -Rlist hidden file cp -icopy file rm -rf directory 删除文件夹及其所有内容 file my_filecheck the file type cat -n file查看文件内容并显示行号 more file 显示每页内容后停下 bash shell ps -p pidlist 查看进程 ps -A top实时显示进程 kill PID关闭进程 du -c du-h显示指定文件大小 sort 对数据进行排序通过文本的方式 排序数字需要sort -n grep [options] pattern [file] 查找匹配指定模式字符的行 man grep查看grep手册 gzip 用来压缩文件 gzcat查看已压缩的文件 gunzip解压缩 tar function [options] object1 object2 function参数定义了tar命令该做什么 tar -zxvf filename.</description>
+    </item>
+    <item>
+      <title>Hugo Study 00</title>
       <link>http://localhost:1313/myhugopage/posts/hugo-study/hugo-study00/</link>
       <pubDate>Mon, 11 Aug 2025 20:13:51 +0900</pubDate>
       <guid>http://localhost:1313/myhugopage/posts/hugo-study/hugo-study00/</guid>
-      <description>for learning </description>
+      <description>hugo网站建立 建立一个网站用于记录学习的技术，研究计划和求职记录。 使用 hugo 和 git pages 实现 用于个人项目记录和面试展示 记录网站建立&#xA;安装和使用hugo https://hugo.opendocs.io/installation/windows/ install go scoop cd hugo &amp;amp;&amp;amp; go build 使用hugo&#xA;hugo new posts/my-first-post.md 建立新的页面，模板在archetypes下进行调节。建立的文件在/content/posts下 content下的子文件夹会被自动识别为一个内容分区。 hugo server启动服务器 在hugo.toml下进行配置 启用Profile进入名片模式 hugo.toml下可以设置多语言模式暂时未开启 在archetyoes下有默认模板default.md用于设置创建的新的页面 部署&#xA;部署在githubpages上 通过github actions方式部署配置文件.github/workflow/develop.yal如下 # Sample workflow for building and deploying a Hugo site to GitHub Pages name: Deploy Hugo site to Pages on: # Runs on pushes targeting the default branch push: branches: [&amp;#34;main&amp;#34;] # Allows you to run this workflow manually from the Actions tab workflow_dispatch: # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages permissions: contents: read pages: write id-token: write # Allow only one concurrent deployment concurrency: group: &amp;#34;pages&amp;#34; cancel-in-progress: false # Default to bash defaults: run: shell: bash jobs: # Build job build: runs-on: ubuntu-latest steps: - name: Install Hugo CLI # Uses the latest version of Hugo specified by peaceiris/actions-hugo uses: peaceiris/actions-hugo@v3 with: hugo-version: &amp;#39;latest&amp;#39; # &amp;lt;-- Updated to &amp;#39;latest&amp;#39; to fix version error extended: true - name: Install Dart Sass run: sudo snap install dart-sass - name: Checkout uses: actions/checkout@v4 with: submodules: recursive fetch-depth: 0 # Needed for themes that rely on Git info - name: Setup Pages id: pages uses: actions/configure-pages@v5 - name: Install Node.</description>
     </item>
   </channel>
 </rss>

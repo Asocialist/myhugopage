@@ -59,5 +59,11 @@ editPost:
         }
      ```
 
-1. 包的安装
-   1. `pip install`
+1. 配置环境和包的安装
+   1. `pip install pandas matplotlib seaborn numpy` matplotlib seaborn用于绘图和可视化  numpy he pandas 用于分析数据
+   1. anaconda 管理python
+
+1. 数据处理
+   - Numpy 管理数组 `import numpy as np`
+
+     -  
