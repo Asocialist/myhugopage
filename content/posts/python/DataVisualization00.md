@@ -43,4 +43,21 @@ editPost:
 
 ### python 复习
 
-1. 
+1. 数据结构复习:
+   1. list 任意对象 有序集合 `my_list = []` 注意元素可重复可以是不同类型
+   2. tuple 有序 不可变 可重复 相当于一个列表但不可变 `my_tuple = ()`
+   3. dictionary 储存键值对(key-value pairs) 键必须唯一且不可变 可变的是可以增删键值对 python3.7版本以后为有序  
+     `mydic = {}` `another_dict = dict()`
+     例子
+
+     ``` python
+        student_info = {
+        "name": "Li Hua",
+        "student_id": 20250815,
+        "courses": ["Math", "Physics"],
+        "age": 20
+        }
+     ```
+
+1. 包的安装
+   1. `pip install`
