@@ -8,7 +8,7 @@ author: "liuruzhi"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: "study python data visualization"
