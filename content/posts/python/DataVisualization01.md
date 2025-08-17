@@ -24,15 +24,15 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: false # only hide on current single page
+image: "" # image path/url
+alt: "" # alt text
+caption: "" # display caption under cover
+relative: false # when using page bundles set this to true
+hidden: false # only hide on current single page
 editPost:
-    URL: "https://github.com/Asocialist/myhugopage/tree/main/content/"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+URL: "https://github.com/Asocialist/myhugopage/tree/main/content/"
+Text: "Suggest Changes" # edit text
+appendFilePath: true # to append file path to Edit link
 ---
 
 ## 学习numpy
@@ -45,17 +45,17 @@ editPost:
 
 ### Ndarray对象
 
-    - 一系列同类型数据集合以0下标开始对元素索引
-    - 存放同类型多维数组在内存中占有相同大小区域
-    - 由一个指向数据的指针 dtype 表示形状的shape元组 跨度元组stride组成(跨度可以为负向后移动)
-    `numpy.array(object, dtype = None, copy = True, order = None, subok = False, ndmin = 0)`
+- 一系列同类型数据集合以0下标开始对元素索引
+- 存放同类型多维数组在内存中占有相同大小区域
+- 由一个指向数据的指针 dtype 表示形状的shape元组 跨度元组stride组成(跨度可以为负向后移动)
+`numpy.array(object, dtype = None, copy = True, order = None, subok = False, ndmin = 0)`
 
 1. dtype数据类型
 
-     - 类似C语言数据类型
-     - numpy.dtype用于描述与数组对应的内存区域是如何使用的
-     - 字节顺序  是通过对数据类型预先设定 `<` 或 `>` 来决定的。 `<` 意味着小端法(最小值存储在最小的地址，即低位组放在最前面)。`>` 意味着大端法(最重要的字节存储在最小的地址，即高位组放在最前面)。
-     - `numpy.dtype(object, align, copy)`object - 要转换为的数据类型对象 align - 如果为 true，填充字段使其类似 C 的结构体。copy 复制 dtype 对象 ，如果为 false，则是对内置数据类型对象的引用
+- 类似C语言数据类型
+- numpy.dtype用于描述与数组对应的内存区域是如何使用的
+- 字节顺序  是通过对数据类型预先设定 `<` 或 `>` 来决定的。 `<` 意味着小端法(最小值存储在最小的地址，即低位组放在最前面)。`>` 意味着大端法(最重要的字节存储在最小的地址，即高位组放在最前面)。
+- `numpy.dtype(object, align, copy)`object - 要转换为的数据类型对象 align - 如果为 true，填充字段使其类似 C 的结构体。copy 复制 dtype 对象 ，如果为 false，则是对内置数据类型对象的引用
 
 ```python
        import numpy as np
@@ -79,7 +79,7 @@ editPost:
 
 ### 建立数组
 
-    - `numpy.empty(shape, dtype = float, order = 'C')` numpy.empty方法建立制定形状和数据类型的数组(order为C是行优先储存F为列优先储存)
+- `numpy.empty(shape, dtype = float, order = 'C')` numpy.empty方法建立制定形状和数据类型的数组(order为C是行优先储存F为列优先储存)
 
 ```python
     # 生成随机数组
@@ -148,7 +148,7 @@ editPost:
 ```
 
 - 从已有数组建立数组
-  - numpy.asarray 类似numpy.array `numpy.asarray(a,dtype = None,order = None)`
+- numpy.asarray 类似numpy.array `numpy.asarray(a,dtype = None,order = None)`
 
 ```python
         import numpy as np 
@@ -160,7 +160,7 @@ editPost:
 
 - numpy.frombuffer 用于实现动态数组 接受buffer输入参数
 - `numpy.frombuffer(buffer, dtype = float, count = -1, offset = 0)`
-  - 注意：buffer 是字符串的时候，Python3 默认 str 是 Unicode 类型，所以要转成 bytestring 在原 str 前加上 b。
+- 注意：buffer 是字符串的时候，Python3 默认 str 是 Unicode 类型，所以要转成 bytestring 在原 str 前加上 b。
 
 ```python
         import numpy as np 
@@ -170,8 +170,8 @@ editPost:
         print (a)
 ```
 
-        - numpy.fromiter 从可迭代对象中建立ndarray对象返回一维数组
-        - `numpy.fromiter(iterable, dtype, count=-1)` iterable是可迭代对象 count为收取数据的数量
+- numpy.fromiter 从可迭代对象中建立ndarray对象返回一维数组
+- `numpy.fromiter(iterable, dtype, count=-1)` iterable是可迭代对象 count为收取数据的数量
 
 ```python
         import numpy as np 
@@ -186,9 +186,9 @@ editPost:
 ```
 
 - 从数据范围创建数组
-  - `numpy.arange(start,stop,step,dtype)` start是起始值 stop是终止值(不含) step为步长
-  - `numpy.linspace(start,stop,num=50,endpoint=True,retstep=False,dtype=float)`创建一个一维的等差数组 stop为终止值如果endpoint为真则包含,retstep为真会显示间距,num是样本数
-  - `numpy.logspace(start,stop,num,endpoint,)`创建一个等比数列 base是取对数log的底数
+- `numpy.arange(start,stop,step,dtype)` start是起始值 stop是终止值(不含) step为步长
+- `numpy.linspace(start,stop,num=50,endpoint=True,retstep=False,dtype=float)`创建一个一维的等差数组 stop为终止值如果endpoint为真则包含,retstep为真会显示间距,num是样本数
+- `numpy.logspace(start,stop,num,endpoint,)`创建一个等比数列 base是取对数log的底数
 
 ```python
         #np.arange
@@ -214,9 +214,9 @@ editPost:
 ```
 
 - numpy的切片和索引
-  - 可以实现与python中list一样的操作基于 0 到 n-1的下标进行索引 通过内置的slice函数设置start stop和step参数
-  - 设置索引`:` 切片中可以包含省略号`...`是选择元组的长度与维数相同多维数组切片中用`,`来区分维数
-  - 将冒号左边看成横坐标右边看成纵坐标取得是对应的点
+- 可以实现与python中list一样的操作基于 0 到 n-1的下标进行索引 通过内置的slice函数设置start stop和step参数
+- 设置索引`:` 切片中可以包含省略号`...`是选择元组的长度与维数相同多维数组切片中用`,`来区分维数
+- 将冒号左边看成横坐标右边看成纵坐标取得是对应的点
 
 ```python
         import numpy as np
@@ -249,6 +249,6 @@ editPost:
 ```
 
 - numpy广播机制
-  - 运算中的数组形状不同时触发向形状最长的数组看齐进行复制
+- 运算中的数组形状不同时触发向形状最长的数组看齐进行复制
 
-- numpy数组操作和统计函数
+### numpy数组操作和统计函数
