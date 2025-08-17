@@ -37,3 +37,6 @@ editPost:
 
 ## 学习numpy
 
+- 用numpy建立数组
+- 理解numpy ndarray对象的性质
+- 操作numpy
