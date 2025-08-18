@@ -252,3 +252,17 @@ hidden: false # only hide on current single page
 - 运算中的数组形状不同时触发向形状最长的数组看齐进行复制
 
 ### numpy数组操作和统计函数
+
+1. 数组操作
+   - `numpy.reshape(arr,newshape,order='C')` 不改变数据的情况下修改形状
+   - `np.flatten()` `np.ravel()`数组展开 实现功能一致将多维数组降维为一维但是 `np.flatten` 是copy拷贝一份返回不会对原数组产生影响但是`np.ravel`返回的是视图会影响原始矩阵
+   - `np.sort()`数组的排序直接返回排序后的数组 降序 `np.sort(np.atgsort(-a))`  `np.argsort`返回的是排序后数组的下标 `np.lexsort`根据键值的字典序排序
+   - `np.concatenate((a,b),axis=N)`将两个数组进行组合 `np.vstack()`水平组合相当于concatenate下axis参数为0 `np.hstack()`竖直组合相当于concatencate下axis参数为1 二维数组的情况下没差
+
+1. 统计函数
+   - `np.mean()`平均值 `np.average`加权平均值 
+   - `np.var()` 计算方差 `np.std()`计算标准差
+   - `np.min(ary)` 最小值 `np.max(ary)`最大值
+   - `np.argmin(ary)` `np.argmax(ary)`返回最小和最大值的索引
+   - `np.ptp(ary)`计算最大与最小的差值 `np.median()`计算中间值 `np.sum(ary)`求和
+   - `np.percentile(ary,Num)`计算百分位在统计对象中的值
