@@ -64,6 +64,9 @@ editPost:
    1. anaconda 管理python
 
 1. 数据处理
-   - Numpy 管理数组 `import numpy as np`
 
-     -  
+   - Numpy 管理数组 `import numpy as np` numpy使用见data visualization 01
+
+1. 表格处理和绘图
+
+   - pands处理表格 `import pandas as pd`

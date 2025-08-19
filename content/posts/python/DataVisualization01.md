@@ -260,7 +260,7 @@ hidden: false # only hide on current single page
    - `np.concatenate((a,b),axis=N)`将两个数组进行组合 `np.vstack()`水平组合相当于concatenate下axis参数为0 `np.hstack()`竖直组合相当于concatencate下axis参数为1 二维数组的情况下没差
 
 1. 统计函数
-   - `np.mean()`平均值 `np.average`加权平均值 
+   - `np.mean()`平均值 `np.average`加权平均值
    - `np.var()` 计算方差 `np.std()`计算标准差
    - `np.min(ary)` 最小值 `np.max(ary)`最大值
    - `np.argmin(ary)` `np.argmax(ary)`返回最小和最大值的索引
