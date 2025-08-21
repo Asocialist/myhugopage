@@ -277,3 +277,47 @@ plt.title("Product Sales by Category")
 # 显示图表
 plt.show()
 ```
+
+- pandas + matplotlib + seaborn
+
+  - seaborn设置主题 统计分析
+  - matplotlib设置图像细节
+  - pandas构建表格和结构
+
+``` python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns # 1. 导入 seaborn
+
+# --- 设置 Seaborn 的主题 ---
+# 这会改变 Matplotlib 的默认参数，让图表更好看
+sns.set_theme(style="darkgrid", font="WenQuanYi Micro Hei") # 2. 设置主题和中文字体
+
+# --- 后续代码完全不变 ---
+sales_data = {'月份': ['一月', '二月', '三月', '四月'],
+              '销售额': [150, 220, 180, 270]}
+df = pd.DataFrame(sales_data).set_index('月份')
+
+# 即使是调用 Pandas 的 .plot()，也会应用 Seaborn 的风格
+ax = df.plot(kind='line', title='月度销售额', marker='o') 
+ax.set_ylabel("销售额 (万元)")
+plt.show()
+
+```
+
+```python
+plt.figure(figsize=(10, 6)) # 可以用 Matplotlib 来设置画布大小
+
+# 使用 Seaborn 的 barplot 函数
+# - data=df_multi: 直接传入整个 DataFrame
+# - x='月份', y='销售额': 用列名字符串指定 x 和 y 轴
+# - hue='区域': 将“区域”列映射到颜色，自动分组并生成图例
+ax = sns.barplot(data=df_multi, x='月份', y='销售额', hue='区域')
+
+# 最后，仍然可以用 Matplotlib 的方法进行微调
+ax.set_title('各区域月度销售额对比', fontsize=16)
+ax.set_ylabel('销售额 (万元)')
+ax.set_xlabel('月份')
+
+plt.show()
+```

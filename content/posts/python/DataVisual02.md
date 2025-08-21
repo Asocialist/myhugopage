@@ -36,6 +36,7 @@ hidden: false # only hide on current single page
 - 用pandas建立表格
 - 学习Series(一维) DataFrame(二维) 和 Categorical(三维或可变维)数据结构
 - 处理表格导入数据
+- pd.plot()方式画图
 
 ------
 
@@ -478,6 +479,27 @@ print(df.groupby('班级').agg({
 }))
 ```
 
+- 使用pd.plot方式画图
+
+  - series和dataframe对象上是有.plot()方法来生成图像的
+  - 对图表进行深度定制时（比如添加注释、调整网格线、组合多个复杂的子图），仍然需要 Matplotlib
+  - Pandas 的 .plot() 方法会返回一个 Matplotlib 的 Axes 对象（坐标系对象）
+  - 通过matplotlib对axes对象进行处理
+
+``` python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 创建一个 DataFrame
+sales_data = {'月份': ['一月', '二月', '三月', '四月'],
+              '销售额': [150, 220, 180, 270]}
+df = pd.DataFrame(sales_data).set_index('月份')
+# Pandas 自动使用索引作为 X 轴，列名作为图例，列数据作为 Y 轴
+ax = df.plot(kind='line', title='月度销售额')
+plt.show() # 最终显示图像仍然需要 matplotlib.pyplot
+
+```
+
 ### 数据导入导出
 
 1. CSV
@@ -606,7 +628,7 @@ df = pd.read_excel("path_to_file.xlsx", sheet_name="Sheet1")
 df.to_csv("output.csv", index=False)  # 将 DataFrame 导出为 CSV 文件
 ```
 
-1.json
+1. json
 
 - `pd.read_json('path/json',orient = None)`从json中读取数据并加载为DataFrame
 - `DataFrame.to_json()`将dataframe转换为json格式数据 `df.to_string()`用于返回DataFrame类型的数据也可以直接处理json字符串
