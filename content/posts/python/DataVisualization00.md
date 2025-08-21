@@ -70,3 +70,4 @@ editPost:
 1. 表格处理和绘图
 
    - pands处理表格 `import pandas as pd` pandas使用见data visualization 02
+   - matlplotlib + seaborn 绘图见data visualization 03
