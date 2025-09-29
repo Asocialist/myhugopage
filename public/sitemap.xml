@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/myhugopage/posts/article_collected/article_collected/</loc>
+    <lastmod>2025-09-29T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/tags/article-collected/</loc>
+    <lastmod>2025-09-29T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/</loc>
+    <lastmod>2025-09-29T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/posts/</loc>
+    <lastmod>2025-09-29T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/tags/</loc>
+    <lastmod>2025-09-29T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/posts/python/datavisualization03/</loc>
+    <lastmod>2025-08-19T15:24:39+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myhugopage/posts/python/datavisual02/</loc>
+    <lastmod>2025-08-18T16:15:48+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/myhugopage/posts/python/datavisualization00/</loc>
     <lastmod>2025-08-15T13:53:32+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/myhugopage/posts/python/datavisualization01/</loc>
     <lastmod>2025-08-15T13:53:32+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myhugopage/</loc>
-    <lastmod>2025-08-15T13:53:32+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myhugopage/posts/</loc>
-    <lastmod>2025-08-15T13:53:32+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/myhugopage/posts/linux/linux-study-00/</loc>
     <lastmod>2025-08-13T16:53:38+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/myhugopage/tags/my-notes/</loc>
-    <lastmod>2025-08-13T16:53:38+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myhugopage/tags/</loc>
     <lastmod>2025-08-13T16:53:38+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/myhugopage/posts/hugo-study/hugo-study00/</loc>

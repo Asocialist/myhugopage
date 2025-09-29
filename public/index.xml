@@ -6,8 +6,29 @@
     <description>Recent content on Liu&#39;s memo</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Aug 2025 13:53:32 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/myhugopage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>article collected</title>
+      <link>http://localhost:1313/myhugopage/posts/article_collected/article_collected/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/myhugopage/posts/article_collected/article_collected/</guid>
+      <description>Project Papers (English Titles) Detection of Social Signals for Recognizing Engagement&#xA;人間の社会的信号を検出し、対話におけるエンゲージメントを認識する手法を提案した研究。&#xA;SANG: Socially Aware Navigation Between Groups&#xA;群衆内の人々のF-formationを考慮し、グループ間を社会的に適切に移動するナビゲーション手法を示した研究。&#xA;Robot-Centric Perception of Human Groups&#xA;ロボット視点から人間の群れを知覚・解析し、社会的相互作用に基づいた行動を可能にする方法を検討した研究。&#xA;Exploiting Temporal Information to Detect Conversational Groups&#xA;時系列情報を活用して会話グループを検出するアルゴリズムを提案した研究。&#xA;Intelligent LiDAR Navigation&#xA;LiDARを用いた知的ナビゲーション技術を紹介し、ロボットの環境認識と移動精度の向上を目的とした研究。&#xA;Learning Social Cost Functions for Human-Aware Path Planning&#xA;社会的規範（列に並ぶ、会話を妨げない等）を学習し、ロボットの経路計画に組み込む手法を提案した研究。&#xA;LMNav&#xA;大規模言語モデルを用いて複雑な環境でのロボットナビゲーションを行う新しい枠組みを示した研究。&#xA;Social Type-Aware Navigation Framework for Mobile Robots&#xA;子供や高齢者など多様な人の社会的特性を考慮してロボットが異なる回避行動を取る枠組みを提案した研究。&#xA;F-Formation Detection: Individuating Free-Standing Conversational Groups in Images (Setti et al., 2015)&#xA;画像からF-formationに基づく自由会話グループを自動検出するグラフカット手法を示した研究。&#xA;Real-time Trajectory-based Social Group Detection</description>
+    </item>
+    <item>
+      <title>DataVisualization03</title>
+      <link>http://localhost:1313/myhugopage/posts/python/datavisualization03/</link>
+      <pubDate>Tue, 19 Aug 2025 15:24:39 +0900</pubDate>
+      <guid>http://localhost:1313/myhugopage/posts/python/datavisualization03/</guid>
+      <description>Matplotlib与Seaborn绘图 使用matplotlib 和 seaborn import matplotlib.pyplot as plt import seaborn as sns 理解各个元素的使用和调用 绘制折线图 绘制直方图 Maplotlib 基础类(primitives) : 点plot 线line 文字text 图legend 网格grid 标题title 图片image 容器(containers) : 图形figure 坐标图形axes 坐标轴axis 刻度tick 基础类是我们需要绘制的标准对象 容器元素则包含基础类元素组成整体&#xA;figure &amp;amp;rarr axes &amp;amp;rarr axis &amp;amp;rarr tick&#xA;figure对象 整个图形 至少包含一个子图(axes对象) 包含图名(title)图例(legend) axes对象 子图对象 绘制多个子图时需要 axis对象 鼠标周对象 有locator和formatter两个子对象控制刻度位置和显示数值 tick对象 坐标轴包含两个元素 刻度(包含刻度本身和刻度标签) 标签(坐标轴标签) plt.style.available查看可用样式&#xA;对图进行细微的调整需要获取 axes对象及其子对象 和 figure对象&#xA;plt.gca()返回当前状态下的axes对象 plt.gca().get_children()查看当前axes对象下的元素 plt.gcf()返回当前状态下的的figure对象 用于遍历多个图形的axes对象 图表主要元素&#xA;函数 参数 功能 plt.figure() figsize(图标尺寸) dpi 设置图标大小和分辨率 title() str(图名),fontdict(文本格式字体大小等) 设置标题 xlabel() ylabel() xlabel(x轴名) ylabel(y轴名) 设置x轴y轴标题 axis() xlim() ylim() xmin,xmax,ymin,ymax 设置范围 xticks() yticks() ticks(刻度数值) lables(刻度名称) fontdict 设置x轴y轴刻度 grid() b(网格线) which(主次网格线)axis(x轴y轴网格线) color linestyle linewidth alpha(透明度) 设置x轴y轴格式 legend() loc(位置) edgecolor facecolor fontsize 控制图例显示 图表类型</description>
+    </item>
+    <item>
+      <title>DataVisual02</title>
+      <link>http://localhost:1313/myhugopage/posts/python/datavisual02/</link>
+      <pubDate>Mon, 18 Aug 2025 16:15:48 +0900</pubDate>
+      <guid>http://localhost:1313/myhugopage/posts/python/datavisual02/</guid>
+      <description>学习pandas处理表格 用pandas建立表格 学习Series(一维) DataFrame(二维) 和 Categorical(三维或可变维)数据结构 处理表格导入数据 pd.plot()方式画图 Series 数据结构 一个含有索引的一维数组 左侧的索引(index)可以自动生成从0开始或指定 右侧的值(value) Series可以容纳不同数据类型的元素 int float string 和python对象 大小在创建后不变 可以通过 append 和delete 改变 可以自动对齐和添加名称 创建 Series pd.Series(data = none, index = none, name = none,dtype = none, copy = False, fastpath = False) data : 数据 可以为列表 数组 字典 标量 空时则建立一个空的series index : 索引 name : 名称 dtype : 数据类型 copy : 是否复制数据 fastpath : 快速路径启用 提升性能 import pandas as pd # 创建一个Series s = pd.</description>
+    </item>
     <item>
       <title>Data Visualization 00</title>
       <link>http://localhost:1313/myhugopage/posts/python/datavisualization00/</link>
@@ -20,7 +41,7 @@
       <link>http://localhost:1313/myhugopage/posts/python/datavisualization01/</link>
       <pubDate>Fri, 15 Aug 2025 13:53:32 +0900</pubDate>
       <guid>http://localhost:1313/myhugopage/posts/python/datavisualization01/</guid>
-      <description>学习numpy </description>
+      <description>学习numpy 用numpy建立数组 理解numpy ndarray对象的性质 操作numpy Ndarray对象 一系列同类型数据集合以0下标开始对元素索引 存放同类型多维数组在内存中占有相同大小区域 由一个指向数据的指针 dtype 表示形状的shape元组 跨度元组stride组成(跨度可以为负向后移动) numpy.array(object, dtype = None, copy = True, order = None, subok = False, ndmin = 0) dtype数据类型 类似C语言数据类型 numpy.dtype用于描述与数组对应的内存区域是如何使用的 字节顺序 是通过对数据类型预先设定 &amp;lt; 或 &amp;gt; 来决定的。 &amp;lt; 意味着小端法(最小值存储在最小的地址，即低位组放在最前面)。&amp;gt; 意味着大端法(最重要的字节存储在最小的地址，即高位组放在最前面)。 numpy.dtype(object, align, copy)object - 要转换为的数据类型对象 align - 如果为 true，填充字段使其类似 C 的结构体。copy 复制 dtype 对象 ，如果为 false，则是对内置数据类型对象的引用 import numpy as np student = np.dtype([(&amp;#39;name&amp;#39;,&amp;#39;S20&amp;#39;),(&amp;#39;age&amp;#39;,&amp;#39;i1&amp;#39;),(&amp;#39;marks&amp;#39;,&amp;#39;f4&amp;#39;)]) a = np.array([(&amp;#39;abc&amp;#39;, 21, 50),(&amp;#39;xyz&amp;#39;, 18, 75)], dtype = student) print(a) 数组属性 属性 说明 np.</description>
     </item>
     <item>
       <title>Linux Study00</title>
