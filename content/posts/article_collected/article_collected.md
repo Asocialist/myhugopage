@@ -1,19 +1,19 @@
 ---
-title: 'Article_collected'
-date: 2025-09-29T18:53:18+09:00
+title: 'article collected'
+date: 2025-09-29
 # weight: 1
-# aliases: ["/first"]
-tags: []
-author: "liurunzhi"
+tags: ["article collected"]
+author: "Liu Runzhi"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: ""
-canonicalURL: ""
-disableHLJS: false
+description: "for learning "
+series: ["research article"]
+canonicalURL: "https://canonical.url/to/page"
+disableHLJS: false # to disable highlightjs
 disableShare: false
 hideSummary: false
 searchHidden: false
@@ -23,20 +23,21 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
+
 cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "" # display caption under cover
+    image: "<image path/url>" # image path/url
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: false # only hide on current single page
+    hidden: true # only hide on current single page
 editPost:
     URL: "https://github.com/Asocialist/myhugopage/tree/main/content/"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
 
-## Project Papers (English Titles)
 
+## Project Papers (English Titles)
 
 1. [Detection of Social Signals for Recognizing Engagement](/pdfs/Detection%20of%20social%20signals%20for%20recognizing%20engagement.pdf)  
    人間の社会的信号を検出し、対話におけるエンゲージメントを認識する手法を提案した研究。
