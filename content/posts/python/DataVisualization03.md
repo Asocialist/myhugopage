@@ -306,6 +306,19 @@ plt.show()
 ```
 
 ```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme(style="ticks", font="WenQuanYi Micro Hei")
+
+# 准备更复杂的数据
+sales_data_multi = {
+    '月份': ['一月', '二月', '三月', '四月', '一月', '二月', '三月', '四月'],
+    '区域': ['华北', '华北', '华北', '华北', '华南', '华南', '华南', '华南'],
+    '销售额': [150, 220, 180, 270, 130, 240, 200, 250]
+}
+df_multi = pd.DataFrame(sales_data_multi)
 plt.figure(figsize=(10, 6)) # 可以用 Matplotlib 来设置画布大小
 
 # 使用 Seaborn 的 barplot 函数
